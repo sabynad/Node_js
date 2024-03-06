@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+
+    
+    <% if (loggedIn) { %>
+      <h1>Espace membre</h1>
+      <p>Bienvenue !  <%= email %></p>
+      <a href="logout">Déconnecté</a>
+
+    <% } else { %>
+      <h2>Bonjour</h2>
+      <p>Vous n'êtes pas connecté</p>
+      <p>Merci de vous connecter pour accéder au contenu</p>
+      <a href="login" type="button">Connection</a>
+      <!-- <a href="login">Connection</a> -->
+      <% } %>
+
+     
+  
+  </body>
+</html>
